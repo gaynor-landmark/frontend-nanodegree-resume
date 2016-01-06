@@ -11,8 +11,8 @@ var bio = {
                     "location": "Palmerston North"
   },
   "picURL": "./images/fry.jpg",
-  "welcomeMessage": "This is my welcome message.",
-  "skills": ["Front-end Web Development", "Teaching", "Accountancy"]
+  "welcomeMessage": "My favourite days are productive days. I enjoy losing myself in complex programming problems, chasing down bugs and creating smooth user experiences.",
+  "skills": ["Thorough", "Goal-Oriented", "Analytical Thinker", "Skilled Communicator"]
 };
 
 
@@ -21,24 +21,38 @@ var work = {
   "jobs":[
     {   
     "employer": "Massey University - MUSAC",
-    "title": "Software Developer 1",
+    "title": "Software Developer",
     "location": "Palmerston North",
-    "dates": "February 2012 - December 2015",
-    "description": "VB6 and C# programming"
+    "dates": "April 2002 - December 2015",
+    "description": "ASP.net and C# - a member of the MUSAC 'edge' web application team"
     },
     { 
     "employer": "Massey University - MUSAC",
-    "title": "Software Developer 2",
+    "title": "Software Developer",
     "location": "Palmerston North",
-    "dates": "February 2012 - December 2015",
-    "description": "VB6 and C# programming"
+    "dates": "April 2002 - December 2015",
+    "description": "VB6 and C# - programmer for the MUSAC 'Classic Suite' of school management software programs"
     },
     { 
-    "employer": "Massey University - MUSAC",
-    "title": "Software Developer 3",
+    "employer": "St Alban's Church",
+    "title": "Finance Administrator",
     "location": "Palmerston North",
-    "dates": "February 2012 - December 2015",
-    "description": "VB6 and C# programming"
+    "dates": "April 1999 - August 2002",
+    "description": "Maintained church accounts, payroll, PAYE, GST, Annual Financial Statements prepared for Audit"
+    },
+    { 
+    "employer": "Palmerston North Girls' High School",
+    "title": "Economics Teacher",
+    "location": "Palmerston North",
+    "dates": "July 2000 - December 2000",
+    "description": "Taught Economics to Year 10 and Year 12 students"
+    },
+    { 
+    "employer": "Previously employed in South Africa",
+    "title": "Programmer (Factory Systems) and Teacher (Accounting)",
+    "location": "",
+    "dates": "",
+    "description": ""
     }
   ]
 };
@@ -61,7 +75,7 @@ var education = {
       "dates": "1983"
     },
     {
-      "name": "Van Zyl and Pritchard Computer College",
+      "name": "Van Zyl and Pritchard Training Institute",
       "location": "Johannesburg, S.A.",
       "degree": "Computer Programming Certificate",
       "majors": ["COBOL", "Adabas Natural"],
@@ -72,21 +86,21 @@ var education = {
       "location": "Wellington, N.Z.",
       "degree": "Web Development Certificate",
       "majors": ["?"],
-      "dates": "2016"
+      "dates": "Currently studying"
     }
   ],
   "otherCourses": [
     {
-      "title": "Intro to Business Analysis",
-      "school": "YYYYY",
-      "dates": "01/01/2000",
-      "url": "http:"
+      "title": "Business Analysis Short Courses",
+      "school": "Equinox IT",
+      "dates": "",
+      "url": ""
     },
     {
-      "title": "SQL Master Class",
-      "school": "ZZZZZ",
-      "dates": "01/01/2000",
-      "url": "http:"
+      "title": "Various Programming Short Courses",
+      "school": "UCOL, Youbee",
+      "dates": "",
+      "url": ""
     }
   ]
 };
@@ -94,7 +108,7 @@ var education = {
 //Projects
 var projects = {
   "projects":[
-    {
+   /* {
       "title": "Project A",
       "dates": " - ",
       "description": "unknown",
@@ -104,7 +118,7 @@ var projects = {
       "dates": " - ",
       "description": "unknown",
       "images": ["./images/fry.jpg", "./images/fry.jpg" ]
-    }
+    }*/
 
   ]
 };
@@ -258,7 +272,7 @@ function inName(){
   var arr = str.split(" ");
   return str = arr[0].slice(0,1).toUpperCase() + arr[0].slice(1).toLowerCase() + " " + arr[1].toUpperCase();
 };
-
-$("#main").append(internationalizeButton);
+/*
+$("#main").append(internationalizeButton);*/
 
 $("#mapDiv").append(googleMap);
