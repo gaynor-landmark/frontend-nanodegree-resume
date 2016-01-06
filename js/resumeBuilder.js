@@ -248,11 +248,9 @@ function displayEducation(){
       var formattedName = HTMLschoolName.replace("%data%", education.schools[schoolindx].name);
       var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[schoolindx].degree);
       var formattedDates = HTMLschoolDates.replace("%data%", education.schools[schoolindx].dates);    
-      var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[schoolindx].location);    
-      $(".education-entry:last").append(formattedName);
-      $(".education-entry:last").append(formattedLocation);
-      $(".education-entry:last").append(formattedDegree);
-      $(".education-entry:last").append(formattedDates);    
+      var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[schoolindx].location);         $(".education-entry:last").append(formattedName + formattedDegree);
+      $(".education-entry:last").append(formattedDates); 
+      $(".education-entry:last").append(formattedLocation);     
       for (var i = 0; i < education.schools[schoolindx].majors.length; i++){
         var formattedMajor = HTMLschoolMajor.replace("%data%", education.schools[schoolindx].majors[i]);
         $(".education-entry:last").append(formattedMajor);
